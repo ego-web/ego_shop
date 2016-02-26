@@ -2,10 +2,24 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
+      <paths name="ego">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="new_ego">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="sweb">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/../ego_shop" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
