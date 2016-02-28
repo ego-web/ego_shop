@@ -1,0 +1,6 @@
+.header__nav
+    .container
+        ul.header__nav-list
+            each val_nav_menu in ['Планшеты', 'Мобильные', 'телефоны', 'Mp3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
+                li.header__nav-item
+                    a(href="http://" + val_nav_menu + ".com" target="_blank" class="sprite sprite-" + val_nav_menu)=val_nav_menu

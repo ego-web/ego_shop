@@ -1,0 +1,26 @@
+header.content__header
+    .header__wrapper
+        .header__contacts
+            .container
+                .header__social
+                    ul.socials
+                        each val_soc in ['facebook', 'vk', 'twitter']
+                            li.socials__item
+                                a(href="http://"+val_soc+".com" target="_blank" class="sprite sprite-"+val_soc)=val_soc+".com"
+                .header__adress
+                    span.header__adress-text ул. Маяковская 6, офис 17
+                    a.header__adress-phone(href="tel:+79211231213" target='_blank') +7 (921) 123-12-13
+        .header__logo
+            .container
+                .header__logo-logo
+                    a.header__logo-link(href="#")
+                        img.header__logo-pic(alt='cooltech')
+                .header__logo-form
+                    form.header__search(action='#' method='get' )
+                        input.header__search-input(type='text' placeholder='search')
+                        button.header__search-but(type='submit') Найти
+                .header__logo-nav
+                    nav.header__search-nav
+                        each val_nav_search in ['карта проезда', 'история заказов', 'корзина']
+                            li.header__search-nav-item
+                                a(href="http://" + val_nav_search + ".com" target="_blank" class="sprite sprite-" + val_nav_search)=val_nav_search

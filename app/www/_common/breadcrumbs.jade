@@ -1,0 +1,6 @@
+.breadcrumbs
+    .container
+        ul.breadcrumbs__list
+        each val_nav_breadcrumbs in ['Главная', 'Каталог']
+            li.breadcrumbs__list-item
+                a(href="http://" + val_nav_breadcrumbs + ".com" target="_blank" class="sprite sprite-" + val_nav_breadcrumbs)=val_nav_breadcrumbs + ">"

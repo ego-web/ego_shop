@@ -1,0 +1,50 @@
+aside.content__aside
+    .container
+        .content__aside__menu-one
+            ul.content__aside-list-one
+                each val_aside_menu_one in ['Флагманы', 'Бюджетная линейка']
+                    li.aside__list-one-item
+                        a(href="http://" + val_aside_menu_one + ".com" target="_blank" class="sprite sprite-" + val_aside_menu_one)=val_aside_menu_one
+        .content__aside__menu-two
+            .menu-two__block-one
+                h2.title Наличие в магазинах
+                .block-one__content
+                    ul.block-one__list
+                        each val_aside_menu_one in ['Во всех магазинах', 'В ближайшем ко мне магазине']
+                            li.block-one-item
+                                label(for="byprice" class="label__radio")= val_aside_menu_one
+                                input(type="radio" name="shop" value="" id="" class="type__select")
+            .menu-two__block-two
+                h2.title Бренды
+                .block-two__content
+                    ul.block-two__list
+                        each val_aside_menu_two in ['Lenovo', 'Apple', 'Samsung', 'Asus', 'Motorola']
+                            li.block-two-item
+                                label(for="byprice" class="label__checkbox")= val_aside_menu_two
+                                input(type="checkbox" name="shopbrand" value="" id="" class="type__checkbox")
+            .menu-two__block-three
+                h2.title Цена
+                .block-three__content
+                    .block-three__slider
+                        .block-three__content
+                            .block-three__left
+                                .block-three__text от
+                                    input(type="" name="" value="" id="").block__slider.block__slider-left
+                            .block-three__right
+                                .block-three__text до
+                                    input(type="" name="" value="" id="").block__slider.block__slider-left
+            .menu-two__block-four
+                h2.title Цвет
+                .block-four__content
+                    each key,val in {"Белый":"white","Серый":"gray","Черный":"black","Синий":"darkblue","Красный":"red","Желтый":"yellow","Оранжевый":"orange","Зеленый":"green","Голубой":"blue","Фиолетовый":"purple","Розовый":"pink","Коричневый":"brown"}
+                        input(type="checkbox" name="shopbrand" value='#{val}' id='#{key}').type__checkbox_color
+                        label(for='#{key}' class='label__checkbox_color-#{key}').label__checkbox_color #{val}
+            .menu-two__block-five
+                h2.title Операционные системы
+                .block-five__content
+                    ul.block-five__list
+                        each val_aside_menu_five in ['Android', 'iOS', 'Windows-mobile', 'Symbian', 'Custom']
+                            li.block-five-item
+                                label(for="" class="")= val_aside_menu_five
+                                input(type="checkbox" name="" value="" id="" class="")
+            button.filters__reset(type="reset" value="reset") reset
