@@ -4,11 +4,10 @@
         form(action="#").sort-by
           label(for="select-by__list").sort-by__text
             |Сортировать по
-            select(name="select-by__list").select-by__list
+            select(name="select-by__list" id="select-by__list").select-by__list
               option по цене
               option размеру экрана
               option производителю
-              
       .catalog__view
         span.catalog__view__text
           | Вид каталога
@@ -23,17 +22,17 @@
         .goods__list__item_wrapper
           .slideshow
             .slideshow__display
-              img(src="../img/Samsung-1.png" alt="")
+              img(src="../img/samsung-1.png" alt="")
             ul.slideshow__list
               li.slideshow__item
                 a(href="#").slideshow__pic
-                  img(src="../img/Samsung-1.png" alt="")
+                  img(src="../img/samsung-1.png" alt="")
               li.slideshow__item
                 a(href="#").slideshow__pic
-                  img(src="../img/Samsung-2.png" alt="")
+                  img(src="../img/samsung-2.png" alt="")
               li.slideshow__item.active
                 a(href="#").slideshow__pic
-                  img(src="../img/Samsung-3.png" alt="")
+                  img(src="../img/samsung-3.png" alt="")
             .articul
               span.articul__name
                 |Артикул
@@ -148,99 +147,69 @@
                 |В наличии
               .add_to-basket__button.add_to-basket__button__short
                 input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input  
-        li.goods__list__item
-          .goods__list__item_wrapper
-            .slideshow
-              .slideshow__display
-                img(src="../img/Samsung-1.png" alt="")
-              ul.slideshow__list
-                li.slideshow__item
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-1.png" alt="")
-                li.slideshow__item
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-2.png" alt="")
-                li.slideshow__item.active
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-3.png" alt="")
-              .articul
-                span.articul__name
-                  |Артикул
-                span.articul__text
-                  |189654  
-            .goods__desctription__table_view
-              .goods__desctription__table_view-wrapper
-                .goods__desctription__header.goods__desctription__header__table-view
-                  span.goods__desctription__header-text
-                    |Samsung GT-I9301I GALAXY S3
-                ul.charachteristics__list
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Тип SIM-карты
-                    span.charachteristic__description
-                      |Micro-SIM
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |Количество SIM-карт
-                    span.charachteristic__description
-                      |1
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Цвет
-                    span.charachteristic__description
-                      |Белый
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |ОС
-                    span.charachteristic__description
-                      |Android
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Связь 3G
-                    span.charachteristic__description
-                      |Есть
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |4G(LTE)
-                    span.charachteristic__description
-                      |Нет
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |GPS-модуль
-                    span.charachteristic__description
-                      |Есть  
-                .goods__ratio.goods__ratio__table-view
-                  ul.ratio__list.ratio__list__table-view
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item.ratio__list__item-white
-                  .ratio
-                      |4    
-                .goods__price.goods__price__table-view
-                  span.price__number.price__number__table-view
-                    |11 290
-                  span.price__currency
-                .add__button
-                  .goods__availability.goods__availability__table-view
-                    span.goods__availability__text
-                      |В наличии
-                  .add_to-basket__button.add_to-basket__button__table-view
-                    input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input      
-              .articul
-                span.articul__name
-                  |Артикул
-                span.articul__text
-                  |189654
-            .goods__desctription
-              .goods__desctription__header
+      li.goods__list__item
+        .goods__list__item_wrapper
+          .slideshow
+            .slideshow__display
+              img(src="../img/samsung-1.png" alt="")
+            ul.slideshow__list
+              li.slideshow__item
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-1.png" alt="")
+              li.slideshow__item
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-2.png" alt="")
+              li.slideshow__item.active
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-3.png" alt="")
+            .articul
+              span.articul__name
+                |Артикул
+              span.articul__text
+                |189654
+          .goods__desctription__table_view
+            .goods__desctription__table_view-wrapper
+              .goods__desctription__header.goods__desctription__header__table-view
                 span.goods__desctription__header-text
                   |Samsung GT-I9301I GALAXY S3
-              .goods__desctription__block
-                |Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц 
-              .goods__ratio
-                ul.ratio__list
+              ul.charachteristics__list
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Тип SIM-карты
+                  span.charachteristic__description
+                    |Micro-SIM
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |Количество SIM-карт
+                  span.charachteristic__description
+                    |1
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Цвет
+                  span.charachteristic__description
+                    |Белый
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |ОС
+                  span.charachteristic__description
+                    |Android
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Связь 3G
+                  span.charachteristic__description
+                    |Есть
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |4G(LTE)
+                  span.charachteristic__description
+                    |Нет
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |GPS-модуль
+                  span.charachteristic__description
+                    |Есть
+              .goods__ratio.goods__ratio__table-view
+                ul.ratio__list.ratio__list__table-view
                   li.ratio__list__item
                   li.ratio__list__item
                   li.ratio__list__item
@@ -248,50 +217,80 @@
                   li.ratio__list__item.ratio__list__item-white
                 .ratio
                     |4
-            .goods_price__add_button
-              .goods__price
-                span.price__number
+              .goods__price.goods__price__table-view
+                span.price__number.price__number__table-view
                   |11 290
                 span.price__currency
-              .add_to-basket__button-wrap
-                .add_to-basket__button
-                  input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
-                .goods__availability
+              .add__button
+                .goods__availability.goods__availability__table-view
                   span.goods__availability__text
                     |В наличии
-            .goods__list__item__short
-              .goods__list__item_wrapper.goods__list__item_wrapper__short
-                .articul.articul__short
-                  span.articul__name
-                    |Артикул
-                  span.articul__text
-                    |189654
-                .goods__desctription__header.goods__desctription__header__short
-                  span.goods__desctription__header-text
-                    |Samsung GT-I9301I GALAXY S3
-                .goods__price.goods__price__table-view.goods__price__short
-                  span.price__number.price__number__table-view
-                    |11 290
-                  span.price__currency
-                span.goods__availability__text.goods__availability__text__short
-                  |В наличии
-                .add_to-basket__button.add_to-basket__button__short
+                .add_to-basket__button.add_to-basket__button__table-view
                   input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
+            .articul
+              span.articul__name
+                |Артикул
+              span.articul__text
+                |189654
+          .goods__desctription
+            .goods__desctription__header
+              span.goods__desctription__header-text
+                |Samsung GT-I9301I GALAXY S3
+            .goods__desctription__block
+              |Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц
+            .goods__ratio
+              ul.ratio__list
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item.ratio__list__item-white
+              .ratio
+                  |4
+          .goods_price__add_button
+            .goods__price
+              span.price__number
+                |11 290
+              span.price__currency
+            .add_to-basket__button-wrap
+              .add_to-basket__button
+                input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
+              .goods__availability
+                span.goods__availability__text
+                  |В наличии
+          .goods__list__item__short
+            .goods__list__item_wrapper.goods__list__item_wrapper__short
+              .articul.articul__short
+                span.articul__name
+                  |Артикул
+                span.articul__text
+                  |189654
+              .goods__desctription__header.goods__desctription__header__short
+                span.goods__desctription__header-text
+                  |Samsung GT-I9301I GALAXY S3
+              .goods__price.goods__price__table-view.goods__price__short
+                span.price__number.price__number__table-view
+                  |11 290
+                span.price__currency
+              span.goods__availability__text.goods__availability__text__short
+                |В наличии
+              .add_to-basket__button.add_to-basket__button__short
+                input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
       li.goods__list__item
         .goods__list__item_wrapper
           .slideshow
             .slideshow__display
-              img(src="../img/Samsung-1.png" alt="")
+              img(src="../img/samsung-1.png" alt="")
             ul.slideshow__list
               li.slideshow__item
                 a(href="#").slideshow__pic
-                  img(src="../img/Samsung-1.png" alt="")
+                  img(src="../img/samsung-1.png" alt="")
               li.slideshow__item
                 a(href="#").slideshow__pic
-                  img(src="../img/Samsung-2.png" alt="")
+                  img(src="../img/samsung-2.png" alt="")
               li.slideshow__item.active
                 a(href="#").slideshow__pic
-                  img(src="../img/Samsung-3.png" alt="")
+                  img(src="../img/samsung-3.png" alt="")
             .articul
               span.articul__name
                 |Артикул
@@ -406,99 +405,69 @@
                 |В наличии
               .add_to-basket__button.add_to-basket__button__short
                 input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
-        li.goods__list__item
-          .goods__list__item_wrapper
-            .slideshow
-              .slideshow__display
-                img(src="../img/Samsung-1.png" alt="")
-              ul.slideshow__list
-                li.slideshow__item
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-1.png" alt="")
-                li.slideshow__item
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-2.png" alt="")
-                li.slideshow__item.active
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-3.png" alt="")
-              .articul
-                span.articul__name
-                  |Артикул
-                span.articul__text
-                  |189654  
-            .goods__desctription__table_view
-              .goods__desctription__table_view-wrapper
-                .goods__desctription__header.goods__desctription__header__table-view
-                  span.goods__desctription__header-text
-                    |Samsung GT-I9301I GALAXY S3
-                ul.charachteristics__list
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Тип SIM-карты
-                    span.charachteristic__description
-                      |Micro-SIM
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |Количество SIM-карт
-                    span.charachteristic__description
-                      |1
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Цвет
-                    span.charachteristic__description
-                      |Белый
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |ОС
-                    span.charachteristic__description
-                      |Android
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Связь 3G
-                    span.charachteristic__description
-                      |Есть
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |4G(LTE)
-                    span.charachteristic__description
-                      |Нет
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |GPS-модуль
-                    span.charachteristic__description
-                      |Есть  
-                .goods__ratio.goods__ratio__table-view
-                  ul.ratio__list.ratio__list__table-view
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item.ratio__list__item-white
-                  .ratio
-                      |4    
-                .goods__price.goods__price__table-view
-                  span.price__number.price__number__table-view
-                    |11 290
-                  span.price__currency
-                .add__button
-                  .goods__availability.goods__availability__table-view
-                    span.goods__availability__text
-                      |В наличии
-                  .add_to-basket__button.add_to-basket__button__table-view
-                    input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input      
-              .articul
-                span.articul__name
-                  |Артикул
-                span.articul__text
-                  |189654
-            .goods__desctription
-              .goods__desctription__header
+      li.goods__list__item
+        .goods__list__item_wrapper
+          .slideshow
+            .slideshow__display
+              img(src="../img/samsung-1.png" alt="")
+            ul.slideshow__list
+              li.slideshow__item
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-1.png" alt="")
+              li.slideshow__item
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-2.png" alt="")
+              li.slideshow__item.active
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-3.png" alt="")
+            .articul
+              span.articul__name
+                |Артикул
+              span.articul__text
+                |189654
+          .goods__desctription__table_view
+            .goods__desctription__table_view-wrapper
+              .goods__desctription__header.goods__desctription__header__table-view
                 span.goods__desctription__header-text
                   |Samsung GT-I9301I GALAXY S3
-              .goods__desctription__block
-                |Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц 
-              .goods__ratio
-                ul.ratio__list
+              ul.charachteristics__list
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Тип SIM-карты
+                  span.charachteristic__description
+                    |Micro-SIM
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |Количество SIM-карт
+                  span.charachteristic__description
+                    |1
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Цвет
+                  span.charachteristic__description
+                    |Белый
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |ОС
+                  span.charachteristic__description
+                    |Android
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Связь 3G
+                  span.charachteristic__description
+                    |Есть
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |4G(LTE)
+                  span.charachteristic__description
+                    |Нет
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |GPS-модуль
+                  span.charachteristic__description
+                    |Есть
+              .goods__ratio.goods__ratio__table-view
+                ul.ratio__list.ratio__list__table-view
                   li.ratio__list__item
                   li.ratio__list__item
                   li.ratio__list__item
@@ -506,128 +475,128 @@
                   li.ratio__list__item.ratio__list__item-white
                 .ratio
                     |4
-            .goods_price__add_button
-              .goods__price
-                span.price__number
+              .goods__price.goods__price__table-view
+                span.price__number.price__number__table-view
                   |11 290
                 span.price__currency
-              .add_to-basket__button-wrap
-                .add_to-basket__button
-                  input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
-                .goods__availability
+              .add__button
+                .goods__availability.goods__availability__table-view
                   span.goods__availability__text
                     |В наличии
-            .goods__list__item__short
-              .goods__list__item_wrapper.goods__list__item_wrapper__short
-                .articul.articul__short
-                  span.articul__name
-                    |Артикул
-                  span.articul__text
-                    |189654
-                .goods__desctription__header.goods__desctription__header__short
-                  span.goods__desctription__header-text
-                    |Samsung GT-I9301I GALAXY S3
-                .goods__price.goods__price__table-view.goods__price__short
-                  span.price__number.price__number__table-view
-                    |11 290
-                  span.price__currency
-                span.goods__availability__text.goods__availability__text__short
-                  |В наличии
-                .add_to-basket__button.add_to-basket__button__short
+                .add_to-basket__button.add_to-basket__button__table-view
                   input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
-        li.goods__list__item
-          .goods__list__item_wrapper
-            .slideshow
-              .slideshow__display
-                img(src="../img/Samsung-1.png" alt="")
-              ul.slideshow__list
-                li.slideshow__item
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-1.png" alt="")
-                li.slideshow__item
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-2.png" alt="")
-                li.slideshow__item.active
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-3.png" alt="")
-              .articul
-                span.articul__name
-                  |Артикул
-                span.articul__text
-                  |189654  
-            .goods__desctription__table_view
-              .goods__desctription__table_view-wrapper
-                .goods__desctription__header.goods__desctription__header__table-view
-                  span.goods__desctription__header-text
-                    |Samsung GT-I9301I GALAXY S3
-                ul.charachteristics__list
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Тип SIM-карты
-                    span.charachteristic__description
-                      |Micro-SIM
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |Количество SIM-карт
-                    span.charachteristic__description
-                      |1
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Цвет
-                    span.charachteristic__description
-                      |Белый
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |ОС
-                    span.charachteristic__description
-                      |Android
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Связь 3G
-                    span.charachteristic__description
-                      |Есть
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |4G(LTE)
-                    span.charachteristic__description
-                      |Нет
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |GPS-модуль
-                    span.charachteristic__description
-                      |Есть  
-                .goods__ratio.goods__ratio__table-view
-                  ul.ratio__list.ratio__list__table-view
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item.ratio__list__item-white
-                  .ratio
-                      |4    
-                .goods__price.goods__price__table-view
-                  span.price__number.price__number__table-view
-                    |11 290
-                  span.price__currency
-                .add__button
-                  .goods__availability.goods__availability__table-view
-                    span.goods__availability__text
-                      |В наличии
-                  .add_to-basket__button.add_to-basket__button__table-view
-                    input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input      
-              .articul
+            .articul
+              span.articul__name
+                |Артикул
+              span.articul__text
+                |189654
+          .goods__desctription
+            .goods__desctription__header
+              span.goods__desctription__header-text
+                |Samsung GT-I9301I GALAXY S3
+            .goods__desctription__block
+              |Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц
+            .goods__ratio
+              ul.ratio__list
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item.ratio__list__item-white
+              .ratio
+                  |4
+          .goods_price__add_button
+            .goods__price
+              span.price__number
+                |11 290
+              span.price__currency
+            .add_to-basket__button-wrap
+              .add_to-basket__button
+                input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
+              .goods__availability
+                span.goods__availability__text
+                  |В наличии
+          .goods__list__item__short
+            .goods__list__item_wrapper.goods__list__item_wrapper__short
+              .articul.articul__short
                 span.articul__name
                   |Артикул
                 span.articul__text
                   |189654
-            .goods__desctription
-              .goods__desctription__header
+              .goods__desctription__header.goods__desctription__header__short
                 span.goods__desctription__header-text
                   |Samsung GT-I9301I GALAXY S3
-              .goods__desctription__block
-                |Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц 
-              .goods__ratio
-                ul.ratio__list
+              .goods__price.goods__price__table-view.goods__price__short
+                span.price__number.price__number__table-view
+                  |11 290
+                span.price__currency
+              span.goods__availability__text.goods__availability__text__short
+                |В наличии
+              .add_to-basket__button.add_to-basket__button__short
+                input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
+      li.goods__list__item
+        .goods__list__item_wrapper
+          .slideshow
+            .slideshow__display
+              img(src="../img/samsung-1.png" alt="")
+            ul.slideshow__list
+              li.slideshow__item
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-1.png" alt="")
+              li.slideshow__item
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-2.png" alt="")
+              li.slideshow__item.active
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-3.png" alt="")
+            .articul
+              span.articul__name
+                |Артикул
+              span.articul__text
+                |189654
+          .goods__desctription__table_view
+            .goods__desctription__table_view-wrapper
+              .goods__desctription__header.goods__desctription__header__table-view
+                span.goods__desctription__header-text
+                  |Samsung GT-I9301I GALAXY S3
+              ul.charachteristics__list
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Тип SIM-карты
+                  span.charachteristic__description
+                    |Micro-SIM
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |Количество SIM-карт
+                  span.charachteristic__description
+                    |1
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Цвет
+                  span.charachteristic__description
+                    |Белый
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |ОС
+                  span.charachteristic__description
+                    |Android
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Связь 3G
+                  span.charachteristic__description
+                    |Есть
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |4G(LTE)
+                  span.charachteristic__description
+                    |Нет
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |GPS-модуль
+                  span.charachteristic__description
+                    |Есть
+              .goods__ratio.goods__ratio__table-view
+                ul.ratio__list.ratio__list__table-view
                   li.ratio__list__item
                   li.ratio__list__item
                   li.ratio__list__item
@@ -635,128 +604,128 @@
                   li.ratio__list__item.ratio__list__item-white
                 .ratio
                     |4
-            .goods_price__add_button
-              .goods__price
-                span.price__number
+              .goods__price.goods__price__table-view
+                span.price__number.price__number__table-view
                   |11 290
                 span.price__currency
-              .add_to-basket__button-wrap
-                .add_to-basket__button
-                  input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
-                .goods__availability
+              .add__button
+                .goods__availability.goods__availability__table-view
                   span.goods__availability__text
-                    |В наличии  
-            .goods__list__item__short
-              .goods__list__item_wrapper.goods__list__item_wrapper__short
-                .articul.articul__short
-                  span.articul__name
-                    |Артикул
-                  span.articul__text
-                    |189654
-                .goods__desctription__header.goods__desctription__header__short
-                  span.goods__desctription__header-text
-                    |Samsung GT-I9301I GALAXY S3
-                .goods__price.goods__price__table-view.goods__price__short
-                  span.price__number.price__number__table-view
-                    |11 290
-                  span.price__currency
-                span.goods__availability__text.goods__availability__text__short
-                  |В наличии
-                .add_to-basket__button.add_to-basket__button__short
+                    |В наличии
+                .add_to-basket__button.add_to-basket__button__table-view
                   input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
-        li.goods__list__item
-          .goods__list__item_wrapper
-            .slideshow
-              .slideshow__display
-                img(src="../img/Samsung-1.png" alt="")
-              ul.slideshow__list
-                li.slideshow__item
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-1.png" alt="")
-                li.slideshow__item
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-2.png" alt="")
-                li.slideshow__item.active
-                  a(href="#").slideshow__pic
-                    img(src="../img/Samsung-3.png" alt="")
-              .articul
-                span.articul__name
-                  |Артикул
-                span.articul__text
-                  |189654  
-            .goods__desctription__table_view
-              .goods__desctription__table_view-wrapper
-                .goods__desctription__header.goods__desctription__header__table-view
-                  span.goods__desctription__header-text
-                    |Samsung GT-I9301I GALAXY S3
-                ul.charachteristics__list
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Тип SIM-карты
-                    span.charachteristic__description
-                      |Micro-SIM
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |Количество SIM-карт
-                    span.charachteristic__description
-                      |1
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Цвет
-                    span.charachteristic__description
-                      |Белый
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |ОС
-                    span.charachteristic__description
-                      |Android
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |Связь 3G
-                    span.charachteristic__description
-                      |Есть
-                  li.charachteristics__list__item
-                    span.charachteristic__name
-                      |4G(LTE)
-                    span.charachteristic__description
-                      |Нет
-                  li.charachteristics__list__item.charachteristics__list__item-grey
-                    span.charachteristic__name
-                      |GPS-модуль
-                    span.charachteristic__description
-                      |Есть  
-                .goods__ratio.goods__ratio__table-view
-                  ul.ratio__list.ratio__list__table-view
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item
-                    li.ratio__list__item.ratio__list__item-white
-                  .ratio
-                      |4    
-                .goods__price.goods__price__table-view
-                  span.price__number.price__number__table-view
-                    |11 290
-                  span.price__currency
-                .add__button
-                  .goods__availability.goods__availability__table-view
-                    span.goods__availability__text
-                      |В наличии
-                  .add_to-basket__button.add_to-basket__button__table-view
-                    input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input      
-              .articul
+            .articul
+              span.articul__name
+                |Артикул
+              span.articul__text
+                |189654
+          .goods__desctription
+            .goods__desctription__header
+              span.goods__desctription__header-text
+                |Samsung GT-I9301I GALAXY S3
+            .goods__desctription__block
+              |Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц
+            .goods__ratio
+              ul.ratio__list
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item.ratio__list__item-white
+              .ratio
+                  |4
+          .goods_price__add_button
+            .goods__price
+              span.price__number
+                |11 290
+              span.price__currency
+            .add_to-basket__button-wrap
+              .add_to-basket__button
+                input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
+              .goods__availability
+                span.goods__availability__text
+                  |В наличии
+          .goods__list__item__short
+            .goods__list__item_wrapper.goods__list__item_wrapper__short
+              .articul.articul__short
                 span.articul__name
                   |Артикул
                 span.articul__text
                   |189654
-            .goods__desctription
-              .goods__desctription__header
+              .goods__desctription__header.goods__desctription__header__short
                 span.goods__desctription__header-text
                   |Samsung GT-I9301I GALAXY S3
-              .goods__desctription__block
-                |Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц 
-              .goods__ratio
-                ul.ratio__list
+              .goods__price.goods__price__table-view.goods__price__short
+                span.price__number.price__number__table-view
+                  |11 290
+                span.price__currency
+              span.goods__availability__text.goods__availability__text__short
+                |В наличии
+              .add_to-basket__button.add_to-basket__button__short
+                input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
+      li.goods__list__item
+        .goods__list__item_wrapper
+          .slideshow
+            .slideshow__display
+              img(src="../img/samsung-1.png" alt="")
+            ul.slideshow__list
+              li.slideshow__item
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-1.png" alt="")
+              li.slideshow__item
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-2.png" alt="")
+              li.slideshow__item.active
+                a(href="#").slideshow__pic
+                  img(src="../img/samsung-3.png" alt="")
+            .articul
+              span.articul__name
+                |Артикул
+              span.articul__text
+                |189654
+          .goods__desctription__table_view
+            .goods__desctription__table_view-wrapper
+              .goods__desctription__header.goods__desctription__header__table-view
+                span.goods__desctription__header-text
+                  |Samsung GT-I9301I GALAXY S3
+              ul.charachteristics__list
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Тип SIM-карты
+                  span.charachteristic__description
+                    |Micro-SIM
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |Количество SIM-карт
+                  span.charachteristic__description
+                    |1
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Цвет
+                  span.charachteristic__description
+                    |Белый
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |ОС
+                  span.charachteristic__description
+                    |Android
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |Связь 3G
+                  span.charachteristic__description
+                    |Есть
+                li.charachteristics__list__item
+                  span.charachteristic__name
+                    |4G(LTE)
+                  span.charachteristic__description
+                    |Нет
+                li.charachteristics__list__item.charachteristics__list__item-grey
+                  span.charachteristic__name
+                    |GPS-модуль
+                  span.charachteristic__description
+                    |Есть
+              .goods__ratio.goods__ratio__table-view
+                ul.ratio__list.ratio__list__table-view
                   li.ratio__list__item
                   li.ratio__list__item
                   li.ratio__list__item
@@ -764,32 +733,62 @@
                   li.ratio__list__item.ratio__list__item-white
                 .ratio
                     |4
-            .goods_price__add_button
-              .goods__price
-                span.price__number
+              .goods__price.goods__price__table-view
+                span.price__number.price__number__table-view
                   |11 290
                 span.price__currency
-              .add_to-basket__button-wrap
-                .add_to-basket__button
-                  input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
-                .goods__availability
+              .add__button
+                .goods__availability.goods__availability__table-view
                   span.goods__availability__text
-                    |В наличии    
-            .goods__list__item__short
-              .goods__list__item_wrapper.goods__list__item_wrapper__short
-                .articul.articul__short
-                  span.articul__name
-                    |Артикул
-                  span.articul__text
-                    |189654
-                .goods__desctription__header.goods__desctription__header__short
-                  span.goods__desctription__header-text
-                    |Samsung GT-I9301I GALAXY S3
-                .goods__price.goods__price__table-view.goods__price__short
-                  span.price__number.price__number__table-view
-                    |11 290
-                  span.price__currency
-                span.goods__availability__text.goods__availability__text__short
+                    |В наличии
+                .add_to-basket__button.add_to-basket__button__table-view
+                  input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
+            .articul
+              span.articul__name
+                |Артикул
+              span.articul__text
+                |189654
+          .goods__desctription
+            .goods__desctription__header
+              span.goods__desctription__header-text
+                |Samsung GT-I9301I GALAXY S3
+            .goods__desctription__block
+              |Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц
+            .goods__ratio
+              ul.ratio__list
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item
+                li.ratio__list__item.ratio__list__item-white
+              .ratio
+                  |4
+          .goods_price__add_button
+            .goods__price
+              span.price__number
+                |11 290
+              span.price__currency
+            .add_to-basket__button-wrap
+              .add_to-basket__button
+                input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input
+              .goods__availability
+                span.goods__availability__text
                   |В наличии
-                .add_to-basket__button.add_to-basket__button__short
-                  input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input                                     
+          .goods__list__item__short
+            .goods__list__item_wrapper.goods__list__item_wrapper__short
+              .articul.articul__short
+                span.articul__name
+                  |Артикул
+                span.articul__text
+                  |189654
+              .goods__desctription__header.goods__desctription__header__short
+                span.goods__desctription__header-text
+                  |Samsung GT-I9301I GALAXY S3
+              .goods__price.goods__price__table-view.goods__price__short
+                span.price__number.price__number__table-view
+                  |11 290
+                span.price__currency
+              span.goods__availability__text.goods__availability__text__short
+                |В наличии
+              .add_to-basket__button.add_to-basket__button__short
+                input(type="button", name="name", value="В корзину" class="add_to_basket").add_to-basket__button__input

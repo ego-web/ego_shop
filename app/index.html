@@ -14,11 +14,10 @@
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <!--link(rel="stylesheet", href="../fonts/fonts.css")-->
     <!--modernizer-->
     <script src="bower/modernizr/modernizr.js"></script>
     <!--[if lt IE 9]
-    script(src="../js/html5shiv.js")
+    script(src="js/html5shiv.js")
     //[endif]
     -->
   </head>
@@ -29,23 +28,21 @@
           <div class="container">
             <div class="socials socials__header">
               <ul class="socials_list">
-                <li class="socials__item"><a href="#" class="socials__link socials__link-fb">fb</a></li>
-                <li class="socials__item"><a href="#" class="socials__link socials__link-vk">vk  </a></li>
-                <li class="socials__item"><a href="#" class="socials__link socials__link-tw">tw</a></li>
+                <li class="socials__item"><a href="http://fb.com" target="_blank" class="socials__link socials__link-fb">fb.com</a></li>
+                <li class="socials__item"><a href="http://vk.com" target="_blank" class="socials__link socials__link-vk">vk.com</a></li>
+                <li class="socials__item"><a href="http://twitter.com" target="_blank" class="socials__link socials__link-twitter">twitter.com</a></li>
               </ul>
             </div>
             <div class="contacts">
-              <div class="contacts__adress"><a href="#" class="contacts__adress__text">
-                   
-                  ул. Маяковская 6, офис 17</a></div>
-              <div class="contacts__phone"><a href="tel:+7 (921) 123-12-13" class="contacts__phone__number">+7 (921) 123-12-13</a></div>
+              <div class="contacts__adress"><a href="#" class="contacts__adress__text">ул. Маяковская 6, офис 17</a></div>
+              <div class="contacts__phone"><a href="tel://+7(921)123-12-13" class="contacts__phone__number">+7 (921) 123-12-13</a></div>
             </div>
           </div>
         </div>
         <div class="logo-and-search">
           <div class="container">
             <div class="logo logo__header"><img src="img/logo-header.png" alt="logo" class="logo_img logo_img_header"></div>
-            <form action="" class="search_form">
+            <form action="#" method="get" class="search_form">
               <input type="text" placeholder="Что будем искать" class="search_form-input">
               <input type="submit" value="Найти" class="search_form-submit">
             </form>
@@ -120,7 +117,7 @@
                   </li>
                   <li class="brands__list__item">
                     <input type="checkbox" name="name" value="" id="checkbox3" class="checkbox3 brands__list__item__input">
-                    <label for="checkbox3" class="brands__list__item__label">samsung</label>
+                    <label for="checkbox3" class="brands__list__item__label">Samsung</label>
                   </li>
                   <li class="brands__list__item">
                     <input type="checkbox" name="name" value="" id="checkbox4" class="checkbox4 brands__list__item__input">
@@ -184,10 +181,10 @@
                     <input type="checkbox" name="name" value="" id="os5" class="checkbox5 brands__list__item__input">
                     <label for="os5" class="brands__list__item__label">Custom</label>
                   </li>
-                  <div class="clear__button clear__button-os">   
-                    <input type="reset" name="name" value="Сбросить фильтр" class="clear__button clear__button-os">
-                  </div>
                 </ul>
+                <div class="clear__button clear__button-os">
+                  <input type="reset" name="name" value="Сбросить фильтр" class="clear__button clear__button-os">
+                </div>
               </li>
             </ul>
           </aside>
@@ -195,8 +192,8 @@
             <div class="catalog__header">
               <div class="catalog__filter">
                 <form action="#" class="sort-by">
-                  <label for="" class="sort-by__text">Сортировать по
-                    <select name="" class="select-by__list">
+                  <label for="select-by__list" class="sort-by__text">Сортировать по
+                    <select name="select-by__list" id="select-by__list" class="select-by__list">
                       <option>по цене</option>
                       <option>размеру экрана</option>
                       <option>производителю</option>
@@ -217,17 +214,17 @@
                 <li class="goods__list__item">
                   <div class="goods__list__item_wrapper">
                     <div class="slideshow">
-                      <div class="slideshow__display"><img src="../img/samsung-1.png" alt=""></div>
+                      <div class="slideshow__display"><img src="img/samsung-1.png" alt=""></div>
                       <ul class="slideshow__list">
-                        <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-1.png" alt=""></a></li>
-                        <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-2.png" alt=""></a></li>
-                        <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="../img/samsung-3.png" alt=""></a></li>
+                        <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-1.png" alt=""></a></li>
+                        <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-2.png" alt=""></a></li>
+                        <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="img/samsung-3.png" alt=""></a></li>
                       </ul>
                       <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654      </span></div>
                     </div>
                     <div class="goods__desctription__table_view">
                       <div class="goods__desctription__table_view-wrapper">
-                        <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                        <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                         <ul class="charachteristics__list">
                           <li class="charachteristics__list__item charachteristics__list__item-grey"><span class="charachteristic__name">Тип SIM-карты</span><span class="charachteristic__description">Micro-SIM</span></li>
                           <li class="charachteristics__list__item"><span class="charachteristic__name">Количество SIM-карт</span><span class="charachteristic__description">1</span></li>
@@ -258,8 +255,8 @@
                       <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
                     </div>
                     <div class="goods__desctription">
-                      <div class="goods__desctription__header"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
-                      <div class="goods__desctription__block">Смартфон samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
+                      <div class="goods__desctription__header"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
+                      <div class="goods__desctription__block">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
                       <div class="goods__ratio">
                         <ul class="ratio__list">
                           <li class="ratio__list__item"></li>
@@ -283,7 +280,7 @@
                     <div class="goods__list__item__short">
                       <div class="goods__list__item_wrapper goods__list__item_wrapper__short">
                         <div class="articul articul__short"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
-                        <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                        <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                         <div class="goods__price goods__price__table-view goods__price__short"><span class="price__number price__number__table-view">11 290</span><span class="price__currency"></span></div><span class="goods__availability__text goods__availability__text__short">В наличии</span>
                         <div class="add_to-basket__button add_to-basket__button__short">
                           <input type="button" name="name" value="В корзину" class="add_to_basket add_to-basket__button__input">
@@ -294,17 +291,17 @@
                   <li class="goods__list__item">
                     <div class="goods__list__item_wrapper">
                       <div class="slideshow">
-                        <div class="slideshow__display"><img src="../img/samsung-1.png" alt=""></div>
+                        <div class="slideshow__display"><img src="img/samsung-1.png" alt=""></div>
                         <ul class="slideshow__list">
-                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-1.png" alt=""></a></li>
-                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-2.png" alt=""></a></li>
-                          <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="../img/samsung-3.png" alt=""></a></li>
+                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-1.png" alt=""></a></li>
+                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-2.png" alt=""></a></li>
+                          <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="img/samsung-3.png" alt=""></a></li>
                         </ul>
                         <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654  </span></div>
                       </div>
                       <div class="goods__desctription__table_view">
                         <div class="goods__desctription__table_view-wrapper">
-                          <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                          <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                           <ul class="charachteristics__list">
                             <li class="charachteristics__list__item charachteristics__list__item-grey"><span class="charachteristic__name">Тип SIM-карты</span><span class="charachteristic__description">Micro-SIM</span></li>
                             <li class="charachteristics__list__item"><span class="charachteristic__name">Количество SIM-карт</span><span class="charachteristic__description">1</span></li>
@@ -335,8 +332,8 @@
                         <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
                       </div>
                       <div class="goods__desctription">
-                        <div class="goods__desctription__header"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
-                        <div class="goods__desctription__block">Смартфон samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
+                        <div class="goods__desctription__header"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
+                        <div class="goods__desctription__block">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
                         <div class="goods__ratio">
                           <ul class="ratio__list">
                             <li class="ratio__list__item"></li>
@@ -360,7 +357,7 @@
                       <div class="goods__list__item__short">
                         <div class="goods__list__item_wrapper goods__list__item_wrapper__short">
                           <div class="articul articul__short"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
-                          <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                          <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                           <div class="goods__price goods__price__table-view goods__price__short"><span class="price__number price__number__table-view">11 290</span><span class="price__currency"></span></div><span class="goods__availability__text goods__availability__text__short">В наличии</span>
                           <div class="add_to-basket__button add_to-basket__button__short">
                             <input type="button" name="name" value="В корзину" class="add_to_basket add_to-basket__button__input">
@@ -373,17 +370,17 @@
                 <li class="goods__list__item">
                   <div class="goods__list__item_wrapper">
                     <div class="slideshow">
-                      <div class="slideshow__display"><img src="../img/samsung-1.png" alt=""></div>
+                      <div class="slideshow__display"><img src="img/samsung-1.png" alt=""></div>
                       <ul class="slideshow__list">
-                        <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-1.png" alt=""></a></li>
-                        <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-2.png" alt=""></a></li>
-                        <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="../img/samsung-3.png" alt=""></a></li>
+                        <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-1.png" alt=""></a></li>
+                        <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-2.png" alt=""></a></li>
+                        <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="img/samsung-3.png" alt=""></a></li>
                       </ul>
                       <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654  </span></div>
                     </div>
                     <div class="goods__desctription__table_view">
                       <div class="goods__desctription__table_view-wrapper">
-                        <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                        <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                         <ul class="charachteristics__list">
                           <li class="charachteristics__list__item charachteristics__list__item-grey"><span class="charachteristic__name">Тип SIM-карты</span><span class="charachteristic__description">Micro-SIM</span></li>
                           <li class="charachteristics__list__item"><span class="charachteristic__name">Количество SIM-карт</span><span class="charachteristic__description">1</span></li>
@@ -414,8 +411,8 @@
                       <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
                     </div>
                     <div class="goods__desctription">
-                      <div class="goods__desctription__header"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
-                      <div class="goods__desctription__block">Смартфон samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
+                      <div class="goods__desctription__header"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
+                      <div class="goods__desctription__block">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
                       <div class="goods__ratio">
                         <ul class="ratio__list">
                           <li class="ratio__list__item"></li>
@@ -439,7 +436,7 @@
                     <div class="goods__list__item__short">
                       <div class="goods__list__item_wrapper goods__list__item_wrapper__short">
                         <div class="articul articul__short"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
-                        <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                        <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                         <div class="goods__price goods__price__table-view goods__price__short"><span class="price__number price__number__table-view">11 290</span><span class="price__currency"></span></div><span class="goods__availability__text goods__availability__text__short">В наличии</span>
                         <div class="add_to-basket__button add_to-basket__button__short">
                           <input type="button" name="name" value="В корзину" class="add_to_basket add_to-basket__button__input">
@@ -450,17 +447,17 @@
                   <li class="goods__list__item">
                     <div class="goods__list__item_wrapper">
                       <div class="slideshow">
-                        <div class="slideshow__display"><img src="../img/samsung-1.png" alt=""></div>
+                        <div class="slideshow__display"><img src="img/samsung-1.png" alt=""></div>
                         <ul class="slideshow__list">
-                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-1.png" alt=""></a></li>
-                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-2.png" alt=""></a></li>
-                          <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="../img/samsung-3.png" alt=""></a></li>
+                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-1.png" alt=""></a></li>
+                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-2.png" alt=""></a></li>
+                          <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="img/samsung-3.png" alt=""></a></li>
                         </ul>
                         <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654  </span></div>
                       </div>
                       <div class="goods__desctription__table_view">
                         <div class="goods__desctription__table_view-wrapper">
-                          <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                          <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                           <ul class="charachteristics__list">
                             <li class="charachteristics__list__item charachteristics__list__item-grey"><span class="charachteristic__name">Тип SIM-карты</span><span class="charachteristic__description">Micro-SIM</span></li>
                             <li class="charachteristics__list__item"><span class="charachteristic__name">Количество SIM-карт</span><span class="charachteristic__description">1</span></li>
@@ -491,8 +488,8 @@
                         <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
                       </div>
                       <div class="goods__desctription">
-                        <div class="goods__desctription__header"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
-                        <div class="goods__desctription__block">Смартфон samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
+                        <div class="goods__desctription__header"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
+                        <div class="goods__desctription__block">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
                         <div class="goods__ratio">
                           <ul class="ratio__list">
                             <li class="ratio__list__item"></li>
@@ -516,7 +513,7 @@
                       <div class="goods__list__item__short">
                         <div class="goods__list__item_wrapper goods__list__item_wrapper__short">
                           <div class="articul articul__short"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
-                          <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                          <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                           <div class="goods__price goods__price__table-view goods__price__short"><span class="price__number price__number__table-view">11 290</span><span class="price__currency"></span></div><span class="goods__availability__text goods__availability__text__short">В наличии</span>
                           <div class="add_to-basket__button add_to-basket__button__short">
                             <input type="button" name="name" value="В корзину" class="add_to_basket add_to-basket__button__input">
@@ -528,17 +525,17 @@
                   <li class="goods__list__item">
                     <div class="goods__list__item_wrapper">
                       <div class="slideshow">
-                        <div class="slideshow__display"><img src="../img/samsung-1.png" alt=""></div>
+                        <div class="slideshow__display"><img src="img/samsung-1.png" alt=""></div>
                         <ul class="slideshow__list">
-                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-1.png" alt=""></a></li>
-                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-2.png" alt=""></a></li>
-                          <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="../img/samsung-3.png" alt=""></a></li>
+                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-1.png" alt=""></a></li>
+                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-2.png" alt=""></a></li>
+                          <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="img/samsung-3.png" alt=""></a></li>
                         </ul>
                         <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654  </span></div>
                       </div>
                       <div class="goods__desctription__table_view">
                         <div class="goods__desctription__table_view-wrapper">
-                          <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                          <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                           <ul class="charachteristics__list">
                             <li class="charachteristics__list__item charachteristics__list__item-grey"><span class="charachteristic__name">Тип SIM-карты</span><span class="charachteristic__description">Micro-SIM</span></li>
                             <li class="charachteristics__list__item"><span class="charachteristic__name">Количество SIM-карт</span><span class="charachteristic__description">1</span></li>
@@ -569,8 +566,8 @@
                         <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
                       </div>
                       <div class="goods__desctription">
-                        <div class="goods__desctription__header"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
-                        <div class="goods__desctription__block">Смартфон samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
+                        <div class="goods__desctription__header"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
+                        <div class="goods__desctription__block">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
                         <div class="goods__ratio">
                           <ul class="ratio__list">
                             <li class="ratio__list__item"></li>
@@ -594,7 +591,7 @@
                       <div class="goods__list__item__short">
                         <div class="goods__list__item_wrapper goods__list__item_wrapper__short">
                           <div class="articul articul__short"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
-                          <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                          <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                           <div class="goods__price goods__price__table-view goods__price__short"><span class="price__number price__number__table-view">11 290</span><span class="price__currency"></span></div><span class="goods__availability__text goods__availability__text__short">В наличии</span>
                           <div class="add_to-basket__button add_to-basket__button__short">
                             <input type="button" name="name" value="В корзину" class="add_to_basket add_to-basket__button__input">
@@ -606,17 +603,17 @@
                   <li class="goods__list__item">
                     <div class="goods__list__item_wrapper">
                       <div class="slideshow">
-                        <div class="slideshow__display"><img src="../img/samsung-1.png" alt=""></div>
+                        <div class="slideshow__display"><img src="img/samsung-1.png" alt=""></div>
                         <ul class="slideshow__list">
-                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-1.png" alt=""></a></li>
-                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="../img/samsung-2.png" alt=""></a></li>
-                          <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="../img/samsung-3.png" alt=""></a></li>
+                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-1.png" alt=""></a></li>
+                          <li class="slideshow__item"><a href="#" class="slideshow__pic"><img src="img/samsung-2.png" alt=""></a></li>
+                          <li class="slideshow__item active"><a href="#" class="slideshow__pic"><img src="img/samsung-3.png" alt=""></a></li>
                         </ul>
                         <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654  </span></div>
                       </div>
                       <div class="goods__desctription__table_view">
                         <div class="goods__desctription__table_view-wrapper">
-                          <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                          <div class="goods__desctription__header goods__desctription__header__table-view"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                           <ul class="charachteristics__list">
                             <li class="charachteristics__list__item charachteristics__list__item-grey"><span class="charachteristic__name">Тип SIM-карты</span><span class="charachteristic__description">Micro-SIM</span></li>
                             <li class="charachteristics__list__item"><span class="charachteristic__name">Количество SIM-карт</span><span class="charachteristic__description">1</span></li>
@@ -647,8 +644,8 @@
                         <div class="articul"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
                       </div>
                       <div class="goods__desctription">
-                        <div class="goods__desctription__header"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
-                        <div class="goods__desctription__block">Смартфон samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
+                        <div class="goods__desctription__header"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
+                        <div class="goods__desctription__block">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц </div>
                         <div class="goods__ratio">
                           <ul class="ratio__list">
                             <li class="ratio__list__item"></li>
@@ -672,7 +669,7 @@
                       <div class="goods__list__item__short">
                         <div class="goods__list__item_wrapper goods__list__item_wrapper__short">
                           <div class="articul articul__short"><span class="articul__name">Артикул</span><span class="articul__text">189654</span></div>
-                          <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">samsung GT-I9301I GALAXY S3</span></div>
+                          <div class="goods__desctription__header goods__desctription__header__short"><span class="goods__desctription__header-text">Samsung GT-I9301I GALAXY S3</span></div>
                           <div class="goods__price goods__price__table-view goods__price__short"><span class="price__number price__number__table-view">11 290</span><span class="price__currency"></span></div><span class="goods__availability__text goods__availability__text__short">В наличии</span>
                           <div class="add_to-basket__button add_to-basket__button__short">
                             <input type="button" name="name" value="В корзину" class="add_to_basket add_to-basket__button__input">
