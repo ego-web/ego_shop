@@ -1,0 +1,144 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$view-grid-hover-name: 'view-grid-hover';
+$view-grid-hover-x: 0px;
+$view-grid-hover-y: 0px;
+$view-grid-hover-offset-x: 0px;
+$view-grid-hover-offset-y: 0px;
+$view-grid-hover-width: 16px;
+$view-grid-hover-height: 16px;
+$view-grid-hover-total-width: 446px;
+$view-grid-hover-total-height: 16px;
+$view-grid-hover-image: 'viewOptions.png';
+$view-grid-hover: (0px, 0px, 0px, 0px, 16px, 16px, 446px, 16px, 'viewOptions.png', 'view-grid-hover', );
+$view-grid-name: 'view-grid';
+$view-grid-x: 86px;
+$view-grid-y: 0px;
+$view-grid-offset-x: -86px;
+$view-grid-offset-y: 0px;
+$view-grid-width: 16px;
+$view-grid-height: 16px;
+$view-grid-total-width: 446px;
+$view-grid-total-height: 16px;
+$view-grid-image: 'viewOptions.png';
+$view-grid: (86px, 0px, -86px, 0px, 16px, 16px, 446px, 16px, 'viewOptions.png', 'view-grid', );
+$view-list-2-hover-name: 'view-list-2-hover';
+$view-list-2-hover-x: 172px;
+$view-list-2-hover-y: 0px;
+$view-list-2-hover-offset-x: -172px;
+$view-list-2-hover-offset-y: 0px;
+$view-list-2-hover-width: 16px;
+$view-list-2-hover-height: 16px;
+$view-list-2-hover-total-width: 446px;
+$view-list-2-hover-total-height: 16px;
+$view-list-2-hover-image: 'viewOptions.png';
+$view-list-2-hover: (172px, 0px, -172px, 0px, 16px, 16px, 446px, 16px, 'viewOptions.png', 'view-list-2-hover', );
+$view-list-2-name: 'view-list-2';
+$view-list-2-x: 258px;
+$view-list-2-y: 0px;
+$view-list-2-offset-x: -258px;
+$view-list-2-offset-y: 0px;
+$view-list-2-width: 16px;
+$view-list-2-height: 16px;
+$view-list-2-total-width: 446px;
+$view-list-2-total-height: 16px;
+$view-list-2-image: 'viewOptions.png';
+$view-list-2: (258px, 0px, -258px, 0px, 16px, 16px, 446px, 16px, 'viewOptions.png', 'view-list-2', );
+$view-list-hover-name: 'view-list-hover';
+$view-list-hover-x: 344px;
+$view-list-hover-y: 0px;
+$view-list-hover-offset-x: -344px;
+$view-list-hover-offset-y: 0px;
+$view-list-hover-width: 16px;
+$view-list-hover-height: 16px;
+$view-list-hover-total-width: 446px;
+$view-list-hover-total-height: 16px;
+$view-list-hover-image: 'viewOptions.png';
+$view-list-hover: (344px, 0px, -344px, 0px, 16px, 16px, 446px, 16px, 'viewOptions.png', 'view-list-hover', );
+$view-list-name: 'view-list';
+$view-list-x: 430px;
+$view-list-y: 0px;
+$view-list-offset-x: -430px;
+$view-list-offset-y: 0px;
+$view-list-width: 16px;
+$view-list-height: 16px;
+$view-list-total-width: 446px;
+$view-list-total-height: 16px;
+$view-list-image: 'viewOptions.png';
+$view-list: (430px, 0px, -430px, 0px, 16px, 16px, 446px, 16px, 'viewOptions.png', 'view-list', );
+$spritesheet-width: 446px;
+$spritesheet-height: 16px;
+$spritesheet-image: 'viewOptions.png';
+$spritesheet-sprites: ($view-grid-hover, $view-grid, $view-list-2-hover, $view-list-2, $view-list-hover, $view-list, );
+$spritesheet: (446px, 16px, 'viewOptions.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Here are example usages in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+`display: inline-block` sprite:
+<img class="icon-home" />
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../sprites/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

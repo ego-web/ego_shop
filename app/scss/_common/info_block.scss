@@ -1,0 +1,32 @@
+.infoblock {
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 0.875rem;
+    clear: both;
+    &__leftcol {
+        float: left;
+        width: 48%;
+    }
+    &__rightcol {
+        float: right;
+        width: 48%;
+    }
+    &__paragraph {
+        text-indent: 1.5em;
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.first {
+    width: 48%!important;
+    float: left!important;
+}
+
+.last {
+    width: 48%!important;
+    float: right!important;
+}

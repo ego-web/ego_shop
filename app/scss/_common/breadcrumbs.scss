@@ -1,0 +1,37 @@
+.breadcrumbs {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 21px;
+    &__item {
+        display: inline-block;
+        color: #333333;
+        margin-right: 15px;
+        position: relative;
+    }
+    &__link {
+        &_active {
+            color: #333333;
+            position: relative;
+            &:after {
+                content: '>';
+                position: absolute;
+                top: 0;
+                left: -12px;
+                color: #333333;
+            }
+        }
+        &:hover {
+          color: #ff6600;
+        }
+    }
+}
+
+.page__header {
+    margin-bottom: 35px;
+    &_text {
+        width: 1130px;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,231 @@
+.arrow__block__closed,
+.arrow__block__opened {
+  content: '';
+  background-image: url("../img/accordeon-arrow.png");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 11px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  transition: 0.5s;
+}
+.arrow__block__opened{
+  transform: rotate(180deg);
+}
+
+.sidebar__filter__item-trigger {
+  position: relative;
+}
+
+.sidebar__filter__item-os__brands {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.sidebar__filter__inner__list {
+  padding-left: 30px;
+  border-right: 1px solid #dee2e5;
+  border-left: 1px solid #dee2e5;
+}
+//Availability in stores
+.radio__input {
+  height: 0;
+  display: none;
+}
+.radio__input__label {
+  position: relative;
+  cursor: pointer;
+  color: #555;
+}
+.radio__input__label:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 3px solid #dee2e5;
+  background-color: #ffffff;
+  background-clip: content-box;
+  transition: 0.1s;
+}
+
+
+.radio__input:checked + .radio__input__label:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  border-radius: 10px;
+  border: 3px solid #ff6600;
+  background-color: #ff6600; //#dee2e5;
+  padding: 2px;
+  background-clip: content-box;
+  transition: 0.2s;
+}
+.availability__filter__item {
+  list-style-type: none;
+  // padding-left: 60px;
+  line-height: 37px;
+}
+// Brands
+.brands__list {
+  margin: 10px 0;
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__item__input {
+    display: none;
+  }
+  &__item__label {
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: '';
+      height: 19px;
+      width: 19px;
+      border-radius: 2px;
+      background-color: #dee2e5;
+      position: absolute;
+      top: 2px;
+      left: -27px;
+    }
+  }
+}
+
+.brands__list__item__input + .brands__list__item__label:hover:before {
+  content: url("../img/checkbox-hover.png");
+  // transition: 0.5s;
+  text-align: center;
+  height: 19px;
+  width: 19px;
+  border-radius: 2px;
+  background-color: #dee2e5;
+  position: absolute;
+  line-height: 18px;
+  top: 2px;
+  left: -27px;
+  display: block;
+}
+
+
+.brands__list__item__input:checked + .brands__list__item__label:before {
+  content: url("../img/checkbox-checked.png");
+  transition: 0.5s;
+  text-align: center;
+  height: 19px;
+  width: 19px;
+  border-radius: 2px;
+  background-color: #ff6600;
+  position: absolute;
+  line-height: 18px;
+  top: 2px;
+  left: -27px;
+  display: block;
+}
+
+
+.clear__filter {
+  &__text {
+    color: #00b4ff;
+  }
+  &__button {
+    margin-left: -25px;
+    font-size: 14px;
+    outline: none;
+    padding-bottom: 20px;
+    &:visited {
+      color: #00b4ff;
+    }
+  }
+}
+.clear__button {
+  display: block;
+  margin-left: -15px;
+  font-size: 14px;
+  color: #00b3ff;
+  &-brands {
+    margin-top: 20px;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    outline: 0;
+  }
+  &-os {
+    padding-bottom: 20px;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    outline: 0;
+  }
+}
+.availability__filter__list,
+.brands__list {
+  padding-left: 60px;
+}
+.color_list {
+  padding-top: 20px;
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+.color {
+  width: 37px;
+  height: 37px;
+  border: 1px solid #dee1e4;
+  float: left;
+  margin: 0 22px 22px 0;
+  cursor: pointer;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  &-grey {
+    background-color: #cdcdcd;
+  }
+  &-black {
+    background-color: #000000;
+  }
+  &-blue {
+    background-color: #002d53;
+  }
+  &-red {
+    background-color: #ff1100;
+  }
+  &-yellow {
+    background-color: #fff324;
+  }
+  &-orange {
+    background-color: #ff9243;
+  }
+  &-green {
+    background-color: #78c479;
+  }
+  &-cloud {
+    background-color: #00a7ff;
+  }
+  &-violet {
+    background-color: #a670b0;
+  }
+  &-purple {
+    background-color: #f879b0;
+  }
+  &-brown {
+    background-color: #913d14;
+  }
+}

@@ -1,0 +1,196 @@
+@import "compass";
+@import "../../sprites/sprite";
+.header {
+    background-color: #ffffff;
+}
+
+.icons-and-contacts {
+    min-height: 77px;
+}
+
+.socials {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    &__header {
+        padding-top: 25px;
+        float: left;
+        width: 120px;
+    }
+    &__item {
+        display: inline-block;
+        text-indent: -9999px;
+        margin-right: 10px;
+    }
+    &__link {
+        text-decoration: none;
+        display: block;
+        &-fb {
+            @include sprite($fb);
+            &:hover {
+              @include sprite($fb-hover);
+            }
+        }
+        &-vk {
+            @include sprite($vk);
+            &:hover {
+              @include sprite($vk-hover);
+            }
+        }
+        &-tw {
+            @include sprite($tw);
+            &:hover {
+              @include sprite($tw-hover);
+            }
+        }
+    }
+}
+
+.contacts {
+    float: right;
+    width: 438px;
+    padding-top: 25px;
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    &__adress {
+        display: inline-block;
+        width: 202px;
+        position: relative;
+        float: left;
+        &:before {
+            content: url(../img/map-pin.png);
+            position: absolute;
+            top: 0;
+            left: -18px;
+        }
+    }
+    &__phone {
+        font-weight: 600;
+        display: inline-block;
+        position: relative;
+        float: right;
+        &:before {
+            content: url(../img/telephone.png);
+            position: absolute;
+            top: 0;
+            left: -18px;
+        }
+    }
+}
+
+.contacts__phone__number,
+.contacts__adress__text {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+.logo-and-search {
+    min-height: 95px;
+    background-color: #f4f4f4;
+    border-top: 2px solid #ebeef0;
+    clear: both;
+}
+
+.logo {
+    width: 238px;
+}
+
+.logo__header {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 57px;
+    vertical-align: top;
+}
+
+.search_form {
+    display: inline-block;
+    width: 366px;
+    vertical-align: top;
+    padding-top: 30px;
+    position: relative;
+    &-input {
+        width: 287px;
+        padding-left: 17px;
+        outline: 0;
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        font-weight: 300;
+        height: 32px;
+        border: 1px solid #dee2e5;
+    }
+    &-submit {
+        position: absolute;
+        height: 36px;
+        width: 79px;
+        background-color: #ff6e2d;
+        font-size: 16px;
+        font-weight: 600;
+        outline: 0;
+        color: #ffffff;
+        border: 0;
+        border-radius: 0 3px 3px 0;
+        right: 0;
+    }
+}
+
+.menu {
+    &-header {
+        width: 390px;
+        float: right;
+        padding-top: 38px;
+    }
+    &_list {
+        &_item {
+            display: inline-block;
+            margin-left: 14px;
+            &:first-child {
+              margin-left: 0;
+            }
+        }
+        &_link {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333333;
+        }
+        &_link:hover {
+            color: #ff6600;
+        }
+    }
+}
+
+.nav {
+    height: 52px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0;
+    &__list_item {
+        display: inline-block;
+        list-style-type: none;
+        word-spacing: normal;
+    }
+    &__list_link {
+        text-decoration: none;
+        display: inline-block;
+        color: #333333;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 52px;
+        padding: 0 15px;
+        &:hover {
+            background: #e5e3e3;
+        }
+        &-active {
+            color: #ffffff;
+            background: linear-gradient(34deg, #ff6600 29%, #ff6a18 48%, #ff6e35 70%);
+            &:hover {
+                background: linear-gradient(34deg, #ff6600 29%, #ff6a18 48%, #ff6e35 70%);
+            }
+        }
+    }
+}
