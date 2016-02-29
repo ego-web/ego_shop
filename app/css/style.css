@@ -99,13 +99,13 @@
   width: 27px;
   height: 26px;
 }
-.socials__link-tw {
+.socials__link-twitter {
   background-image: url(../sprites/sprite.png);
   background-position: -288px 0px;
   width: 26px;
   height: 26px;
 }
-.socials__link-tw:hover {
+.socials__link-twitter:hover {
   background-image: url(../sprites/sprite.png);
   background-position: -192px 0px;
   width: 26px;

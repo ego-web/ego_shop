@@ -3,24 +3,21 @@ header.header
         .container
             .socials.socials__header
                 ul.socials_list
-                    li.socials__item
-                        a(href="").socials__link.socials__link-fb fb
-                    li.socials__item
-                        a(href="").socials__link.socials__link-vk vk  
-                    li.socials__item
-                        a(href="").socials__link.socials__link-tw tw
+                    each val_soc in ['fb', 'vk', 'twitter']
+                        li.socials__item
+                            a.socials__link(href="http://" + val_soc + ".com" target="_blank" class="socials__link-" + val_soc)=val_soc + ".com"
             .contacts
                 .contacts__adress
-                  a(href="#").contacts__adress__text 
-                    |ул. Маяковская 6, офис 17
+                  a(href="#").contacts__adress__text
+                    | ул. Маяковская 6, офис 17
                 .contacts__phone
-                  a(href="tel:+7 (921) 123-12-13").contacts__phone__number
+                  a(href="tel://+7(921)123-12-13").contacts__phone__number
                     |+7 (921) 123-12-13
     .logo-and-search
         .container
             .logo.logo__header
                 img(src="../img/logo-header.png", alt="logo").logo_img.logo_img_header
-            form(action="").search_form
+            form(action="#" method="get").search_form
                 input(type="text" placeholder="Что будем искать" ).search_form-input
                 input(type="submit" value="Найти" ).search_form-submit
             .menu.menu-header
@@ -28,7 +25,7 @@ header.header
                     - var menu = ['Карта проезда', 'История заказов', 'Корзина']
                         each item in menu
                             li.menu_list_item
-                                a(href="#" class="").menu_list_link= item
+                                a(href="#").menu_list_link= item
     .nav
         .container
             ul.nav__list              
@@ -36,6 +33,6 @@ header.header
                 each item in nav
                     li.nav__list_item
                         if item == 'Мобильные телефоны'
-                            a(href="#" class="nav__list_link nav__list_link-active")= item
+                            a.nav__list_link.nav__list_link-active(href="#")= item
                         else
-                            a(href="#" class="nav__list_link")= item
+                            a.nav__list_link(href="#")= item
