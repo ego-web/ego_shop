@@ -1,7 +1,7 @@
 var gulp = require("gulp"),
     browserSync = require("browser-sync"),
     compass = require('gulp-compass'),
-    jade = require('gulp-jade'),
+    jade = require('gulp-www'),
     concat = require('gulp-concat'),
     spritesmith = require('gulp.spritesmith'),
     plumber = require('gulp-plumber');
@@ -17,12 +17,12 @@ gulp.task('server', function () {
 });
 
 gulp.task('compass', function () {
-    gulp.src('app/sass/*.scss')
+    gulp.src('app/scss/*.scss')
         .pipe(plumber())
         .pipe(compass({
             config_file: 'app/config.rb',
             css: 'app/pre-css',
-            sass: 'app/sass',
+            sass: 'app/scss',
             sourcemap: true
         }))
         .pipe(gulp.dest('app/pre-css'));
@@ -48,7 +48,7 @@ gulp.task('concat', function () {
 });
 
 gulp.task('jade', function () {
-    gulp.src('app/jade/**/*.jade')
+    gulp.src('app/www/**/*.www')
         .pipe(plumber())
         .pipe(jade({
             pretty: '\t'
@@ -64,9 +64,9 @@ gulp.task('watch', function () {
         'app/js/*.js',
         'app/css/*.css'
         ]).on('change', browserSync.reload);
-    gulp.watch('app/sass/**/*.scss', ['compass']);
+    gulp.watch('app/scss/**/*.scss', ['compass']);
     gulp.watch('app/pre-css/*.css', ['concat']);
-    gulp.watch('app/jade/**/*.jade', ['jade']);
+    gulp.watch('app/www/**/*.www', ['jade']);
 });
 
 gulp.task('default', ['server', 'watch']);

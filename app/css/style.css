@@ -1,41 +1,53 @@
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
+@font-face {
+  font-family: "opensans-regular";
+  src: url("../fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/opensans-regular-webfont.woff") format("woff"),
+  url("../fonts/opensans-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "opensans-semibold";
+  src: url("../fonts/opensans-semibold-webfont.eot");
+  src: url("../fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/opensans-semibold-webfont.woff") format("woff"),
+  url("../fonts/opensans-semibold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "opensans-light";
+  src: url("../fonts/opensans-light-webfont.eot");
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/opensans-light-webfont.woff") format("woff"),
+  url("../fonts/opensans-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../fonts/opensans-bold-webfont.eot');
+  src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-bold-webfont.woff') format('woff'),
+  url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+  url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
+* {
+  box-sizing: border-box;
 }
 
-.icon-email {
-  @include sprite($icon-email);
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  *zoom: 1;
 }
 
-Here are example usages in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-`display: inline-block` sprite:
-<img class="icon-home" />
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 .header {
   background-color: #ffffff;
 }
@@ -174,7 +186,7 @@ The `sprites` mixin generates identical output to the CSS template
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 300;
-  height: 32px;
+  height: 36px;
   border: 1px solid #dee2e5;
 }
 .search_form-submit {
@@ -315,11 +327,22 @@ The `sprites` mixin generates identical output to the CSS template
   text-decoration: none;
   display: block;
   color: #333333;
-  border: .5px solid #dee2e5;
+  border: 1px solid #dee2e5;
+  margin-bottom: -1px;
 }
 .sidebar__filter__item-trigger:hover {
   background-color: #d9e5ea;
 }
+.sidebar__filter__item:first-child>a {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.sidebar__filter__item:last-child>a {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
 
 .cellphone__type__list {
   list-style-type: none;
@@ -863,8 +886,8 @@ The `sprites` mixin generates identical output to the CSS template
 
 .goods__list {
   list-style-type: none;
-  margin-right: -15px;
-  overflow: hidden;
+  /*margin-right: -15px;*/
+  /*overflow: hidden;*/
 }
 .goods__list__item {
   background-color: #ffffff;
@@ -1166,8 +1189,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .grid__view {
   width: 235px;
-  margin-right: 13px;
+  height: 512px;
+  margin-right: 14px;
   display: inline-block;
+}
+
+.grid__view:nth-child(3n) {
+  margin-right: -10px;
 }
 
 .none {
@@ -1244,12 +1272,14 @@ The `sprites` mixin generates identical output to the CSS template
   float: left;
   width: 48%;
 }
+
 .infoblock__rightcol {
   float: right;
   width: 48%;
 }
 .infoblock__paragraph {
   text-indent: 1.5em;
+  margin-bottom: 20px;
 }
 .infoblock:after {
   content: '';
@@ -1440,7 +1470,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-family: "OpenSans-Regular";
+  font-family: opensans-regular;
 }
 
 .wrapper {
@@ -1471,5 +1501,3 @@ ul {
   padding: 0;
   margin: 0;
 }
-
-/*# sourceMappingURL=main.css.map */

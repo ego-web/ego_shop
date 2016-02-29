@@ -102,8 +102,9 @@ var myModule = (function() {
   };
 
   // Columnizer
-  $('.infoblock__paragraph').addClass('dontsplit');
+  //$('.infoblock__paragraph').addClass('dontsplit');
   $('.infoblock__text').columnize({
+    //width:500
     columns: 2
   });
 

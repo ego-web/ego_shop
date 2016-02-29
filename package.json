@@ -1,5 +1,5 @@
 {
-  "name": "cooltech",
+  "name": "ego_shop",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",

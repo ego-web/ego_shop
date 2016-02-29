@@ -1,0 +1,115 @@
+aside.sidebar
+        ul.cellphone__type__list
+            li.cellphone__type__item.cellphone__type__item-first
+                |Флагманы
+            li.cellphone__type__item.cellphone__type__item_active.cellphone__type__item-last
+                |Бюджетная линейка
+        ul.sidebar__filter__list
+            li.sidebar__filter__item
+                a(href="").sidebar__filter__item-trigger Наличие в магазинах
+                  span.arrow.arrow__block__closed
+                ul.availability__filter__list.sidebar__filter__inner__list
+                    li.availability__filter__item
+                        span.checkbox
+                            input(type="radio" name="radio" id="radio1" class="radio__input")
+                            label(for="radio1").radio__input__label
+                                |Во всех магазинах
+                    li.availability__filter__item 
+                        span.checkbox        
+                            input(type="radio" name="radio" id="radio2" class="radio__input")
+                            label(for="radio2").radio__input__label
+                                |В ближайшем ко мне магазине
+            li.sidebar__filter__item
+                a(href="").sidebar__filter__item-trigger Бренды
+                  span.arrow.arrow__block__closed
+                ul.brands__list.sidebar__filter__inner__list
+                  li.brands__list__item
+                    input(type="checkbox" name="name" value="" class="checkbox1" id="checkbox1").brands__list__item__input
+                    label(for="checkbox1").brands__list__item__label
+                      |Lenovo
+                  li.brands__list__item
+                    input(type="checkbox" name="name" value="" class="checkbox2" id="checkbox2").brands__list__item__input
+                    label(for="checkbox2").brands__list__item__label
+                      |Apple
+                  li.brands__list__item
+                    input(type="checkbox" name="name" value="" class="checkbox3" id="checkbox3").brands__list__item__input
+                    label(for="checkbox3").brands__list__item__label
+                      |Samsung
+                  li.brands__list__item
+                    input(type="checkbox" name="name" value="" class="checkbox4" id="checkbox4").brands__list__item__input
+                    label(for="checkbox4").brands__list__item__label
+                      |Asus                
+                  li.brands__list__item
+                    input(type="checkbox" name="name" value="" class="checkbox5" id="checkbox5").brands__list__item__input
+                    label(for="checkbox5").brands__list__item__label
+                      |Motorola
+                    .clear__button.clear__button-brand
+                      input(type="reset", name="name", value="Сбросить фильтр" class=" clear__button clear__button-brands") 
+            li.sidebar__filter__item
+                a(href="").sidebar__filter__item-trigger Цена
+                  span.arrow.arrow__block__closed
+                ul.sidebar__filter__inner__list.price_slider_list
+                  li.sidebar__filter__inner__list-item.price_slider_item
+                    label(for="min").price__input__label от
+                    input(type="text" value="" class="min" placeholder="0" id="min").price__input.price__input__min
+                    label(for="max").price__input__label до
+                    input(type="text" value="" class="max" placeholder="13000" id="max").price__input.price__input__max
+                    #slider.price_slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all
+            li.sidebar__filter__item
+                a(href="").sidebar__filter__item-trigger Цвет
+                  span.arrow.arrow__block__closed
+                ul.sidebar__filter__inner__list.color_list
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-white
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-grey
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-black
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-blue
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-red
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-yellow
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-orange
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-green
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-cloud
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-violet
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-purple
+                    li.sidebar__filter__inner__list-item
+                      span.color.color-brown
+            li.sidebar__filter__item.sidebar__filter__item-os__brands
+                a(href="").sidebar__filter__item-trigger Операционные системы
+                  span.arrow.arrow__block__closed
+                ul.brands__list.sidebar__filter__inner__list
+                  li.brands__list__item
+                    input(type="checkbox" name="name" value="" class="checkbox1" id="os1").brands__list__item__input
+                    label(for="os1").brands__list__item__label
+                      |Android
+                  li.brands__list__item
+                    input(type="checkbox" name="name" value="" class="checkbox2" id="os2").brands__list__item__input
+                    label(for="os2").brands__list__item__label
+                      |iOS
+                  li.brands__list__item
+                    input(type="checkbox" name="name" value="" class="checkbox3" id="os3").brands__list__item__input
+                    label(for="os3").brands__list__item__label
+                      |Windows Mobile
+                  li.brands__list__item
+                    input(type="checkbox" name="name" value="" class="checkbox4" id="os4").brands__list__item__input
+                    label(for="os4").brands__list__item__label
+                      |Symbian                
+                  li.brands__list__item
+                    input(type="checkbox" name="name" value="" class="checkbox5" id="os5").brands__list__item__input
+                    label(for="os5").brands__list__item__label
+                      |Custom
+                  .clear__button.clear__button-os    
+                    input(type="reset", name="name", value="Сбросить фильтр" class="clear__button clear__button-os")
+                  
+              
+
+           
